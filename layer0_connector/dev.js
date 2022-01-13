@@ -9,7 +9,7 @@ module.exports = async function dev() {
     label: 'Nuxt3 Beta',
 
     // The command to start your app in dev mode
-    command: () => `npx nuxi dev`,
+    command: port => `PORT=${port} npx nuxi dev`,
 
     // Once your app's console output has matched all of
     // the following patterns, the "Layer0 ready on ..."
