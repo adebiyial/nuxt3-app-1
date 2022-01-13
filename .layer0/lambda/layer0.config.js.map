@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../layer0.config.js"],
+  "sourcesContent": ["module.exports = {\n  connector: './layer0_connector',\n};\n"],
+  "mappings": "AAAA,OAAO,QAAU,CACf,UAAW",
+  "names": []
+}
