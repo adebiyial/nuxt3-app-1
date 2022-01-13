@@ -6,14 +6,15 @@ const { createDevServer } = require('@layer0/core/dev');
 module.exports = async function dev() {
   return createDevServer({
     // All console output from your app will be prefixed with this label
-    label: 'Nuxt3 Beta',
+    label: 'Nuxt3 > Beta',
 
     // The command to start your app in dev mode
-    command: port => `PORT=${port} npx nuxi dev`,
+    // !important https://github.com/nuxt/framework/issues/895#issuecomment-942047079
+    command: () => `npx nuxi dev`,
 
     // Once your app's console output has matched all of
     // the following patterns, the "Layer0 ready on ..."
     // message will be displayed
-    ready: [/Listening on/i, /Listening on/i],
+    ready: [/Listening on/i],
   });
 };
