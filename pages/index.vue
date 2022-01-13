@@ -6,3 +6,11 @@
     </div>
   </div>
 </template>
+
+
+
+<script>
+import installDevtools from '@layer0/devtools/install'
+
+installDevtools()
+</script>
